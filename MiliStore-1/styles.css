@@ -1,0 +1,190 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Personal Info Section */
+#personal-info {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info-container {
+  display: inline-block;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+#personal-info h2 {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+#personal-info p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Education Section */
+#education,
+#skills,
+#work-experience {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#education ul,
+#work-experience ul {
+  padding-left: 20px;
+}
+
+#education li,
+#work-experience li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Skills Section */
+#skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#skills-list li {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+#toggle-skills {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#toggle-skills:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #personal-info h2 {
+    font-size: 1.6rem;
+  }
+
+  #personal-info p {
+    font-size: 1.1rem;
+  }
+
+  #education li,
+  #work-experience li {
+    font-size: 1rem;
+  }
+
+  #skills-list {
+    justify-content: center;
+  }
+
+  #skills-list li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  #personal-info h2 {
+    font-size: 1.4rem;
+  }
+
+  #personal-info p {
+    font-size: 1rem;
+  }
+
+  #education li,
+  #work-experience li {
+    font-size: 0.9rem;
+  }
+
+  #skills-list li {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}
